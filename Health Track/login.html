@@ -11,44 +11,34 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- link do meu CSS -->
-    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link rel="stylesheet" href="../assets/CSS/loginstyle.css">
 
     <title>Health Track Login</title>
 
 </head>
 
-<body class="login-bg">
-    <div class="header-login">
-        <div class="header-top-b">
-            <a href="index.html" class="header-title-b"> Health Track
-            </a>
-        </div>
-    </div>
+<body>
+    <main class="form-signin">
+        <form>
+            <h1 class="h3 mb-3 fw-normal">Login</h1>
 
-    <div class="login-body">
-        <div class="login-box">
-            <h2>Login</h2>
-            <form action="">
-                <div class="input-box">
-                    <label for="email">Email:</label>
-                    <input required type="email" id="email">
-                </div>
-                <div class="input-box">
-                    <label for="senha">Senha:</label>
-                    <input required type="password">
-                </div>
-                <div>
-                    <button class="submit">
-                        Login
-                    </button>
-                </div>
-                <div>
-                    <a href="cadastro.html">Não tenho cadastro</a>
-                </div>
-            </form>
-        </div>
+            <div class="form-floating">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
 
-    </div>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="remember-me"> Lembre-me
+                </label>
+            </div>
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Entrar</button>
+        </form>
+    </main>
 </body>
 
 </html>
